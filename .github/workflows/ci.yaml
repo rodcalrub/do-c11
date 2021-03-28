@@ -1,0 +1,11 @@
+name: Continous Integration
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  simpleTest:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world!"
